@@ -42,11 +42,57 @@ function termSearch(){
   });
 }
 
+/*function randSearch(){
+  
+  
+  var randLimit = 1;
+  
+  $.ajax({
+    type: "GET",
+    dataType: "jsonp",
+    url: url,
+    data: {
+          'action': "query",
+          'format': "json",
+          'list': "random",
+          'rnlimit' : "1"
+    }
+,    success: function(data){
+      
+      console.log(data);
+      
+      var i;
+      for(i=1; i < data[1].length; i++){
+        var result = "<a href='" + data[3][i] + "' target='_blank'><h4>" + data[1][i] + "</h4>" + "<p>" + data[2][i] + "</p></a>";
+        console.log(result);
+        var resDiv = $('<div>');
+        resDiv.addClass("col-md-12 resultEntry");
+        resDiv.append(result).appendTo('#results');
+      //  .append(result).appendTo('#results');
+        //var searchEntry = $("<p></p>").text(result);
+        
+        //console.log(searchEntry);
+        
+       // $("#results").append(searchEntry);
+      }
+      
+      
+    }
+  });
+}*/
+
 //Return candidate search terms
 $(function(){
   
   //var searchItem = $("#searchbox").val();
    document.getElementById("searchBtn").addEventListener('click', termSearch);
+
+   document.getElementById("randomBtn").onclick = function(){
+
+    var randUri = "https://en.wikipedia.org/wiki/Special:Random";
+    // location.href = randUri;
+    window.open(randUri);
+   };
  
   $("#searchbox").autocomplete({
     

@@ -23,7 +23,7 @@
   </div>
   <!-- <form id="dialog"> -->
   <div id="controls" class="row">
-    <div id="search" class="col-md-8"><span id="searchbox-wrapper"><input type="search" id="searchbox" class="form-control" placeholder="I'm looking for..." size="100"/><span>&times;</span></span></div>
+    <div id="search" class="col-md-11"><span id="searchbox-wrapper"><input type="search" id="searchbox" class="form-control" placeholder="I'm looking for..." size="100"/><span>&times;</span></span></div>
     <div><button id="searchBtn" class="btn btn-default form-control"><i class="fa fa-search" aria-hidden="true"></i></button></div>
     <div><button id="randomBtn" class="btn btn-default form-control"><i class="fa fa-random" aria-hidden="true"></i></div>
   </div>
