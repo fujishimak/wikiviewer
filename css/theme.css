@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(118,118,118);
+}
+
+h1{
+  font-family: 'Linux Libertine';
+}
+
+#wrapper {
+  margin: auto;
+  position: relative;
+  width:600px;
+  padding-top: 60px;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.logo-box{
+  width: 50px;
+  padding-top: 10px;
+}
+
+.logo{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top:30px;
+}
+
+#search {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#info {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  font-family: 'Linux Libertine';
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  z-index: 10;
+  height: auto;
+}
+
+.resultEntry {
+
+  border: 1px solid #666;
+  /*border-color: #eee;*/
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-family: 'Linux-Libertine';
+  background-color: whitesmoke;
+  color: #666; 
+  transition:all 0.3s ease;
+  opacity: 0.8;
+  padding: 5px 5px 5px 5px;
+
+}
+
+.resultEntry:hover {
+  opacity: 1;
+  border: 2px solid #666;
+}
+
+a:link, a:visited, a:hover, a:active   {
+    text-decoration: none;
+    color: #666;
+}
+
+#searchbox-wrapper {
+  display: inline-flex;
+}
+
+#searchbox-wrapper > span {
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+  visibility: hidden;
+  margin-left: -20px;
+  padding-top: 5px;
+  
+}
+
